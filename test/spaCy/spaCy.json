@@ -1,0 +1,457 @@
+{
+    "conformsTo": 0.1,
+    "created": "2018-11-30T14:05:33",
+    "date": "2018-11-30T14:05:33",
+    "dependenciesBasic": [
+        {
+            "dependent": 0,
+            "governor": 1,
+            "type": "amod"
+        },
+        {
+            "dependent": 1,
+            "governor": 7,
+            "type": "nsubj"
+        },
+        {
+            "dependent": 2,
+            "governor": 1,
+            "type": "prep"
+        },
+        {
+            "dependent": 3,
+            "governor": 4,
+            "type": "det"
+        },
+        {
+            "dependent": 4,
+            "governor": 2,
+            "type": "pobj"
+        },
+        {
+            "dependent": 5,
+            "governor": 4,
+            "type": "prep"
+        },
+        {
+            "dependent": 6,
+            "governor": 5,
+            "type": "pobj"
+        },
+        {
+            "dependent": 7,
+            "governor": 7,
+            "type": "ROOT"
+        },
+        {
+            "dependent": 8,
+            "governor": 9,
+            "type": "compound"
+        },
+        {
+            "dependent": 9,
+            "governor": 7,
+            "type": "dobj"
+        },
+        {
+            "dependent": 10,
+            "governor": 7,
+            "type": "prep"
+        },
+        {
+            "dependent": 11,
+            "governor": 10,
+            "type": "pobj"
+        },
+        {
+            "dependent": 12,
+            "governor": 7,
+            "type": "punct"
+        },
+        {
+            "dependent": 13,
+            "governor": 14,
+            "type": "nsubj"
+        },
+        {
+            "dependent": 14,
+            "governor": 14,
+            "type": "ROOT"
+        },
+        {
+            "dependent": 15,
+            "governor": 14,
+            "type": "acomp"
+        },
+        {
+            "dependent": 16,
+            "governor": 19,
+            "type": "mark"
+        },
+        {
+            "dependent": 17,
+            "governor": 19,
+            "type": "nsubj"
+        },
+        {
+            "dependent": 18,
+            "governor": 19,
+            "type": "aux"
+        },
+        {
+            "dependent": 19,
+            "governor": 15,
+            "type": "ccomp"
+        },
+        {
+            "dependent": 20,
+            "governor": 14,
+            "type": "punct"
+        }
+    ],
+    "expressions": [
+        {
+            "dep": "nsubj",
+            "head": 1,
+            "id": 0,
+            "tokens": [
+                0,
+                1,
+                2
+            ],
+            "type": "NP"
+        },
+        {
+            "dep": "pobj",
+            "head": 4,
+            "id": 1,
+            "tokens": [
+                3,
+                4,
+                5
+            ],
+            "type": "NP"
+        },
+        {
+            "dep": "pobj",
+            "head": 6,
+            "id": 2,
+            "tokens": [
+                6
+            ],
+            "type": "NP"
+        },
+        {
+            "dep": "dobj",
+            "head": 9,
+            "id": 3,
+            "tokens": [
+                8,
+                9
+            ],
+            "type": "NP"
+        },
+        {
+            "dep": "pobj",
+            "head": 11,
+            "id": 4,
+            "tokens": [
+                11
+            ],
+            "type": "NP"
+        },
+        {
+            "dep": "nsubj",
+            "head": 13,
+            "id": 5,
+            "tokens": [
+                13
+            ],
+            "type": "NP"
+        },
+        {
+            "dep": "nsubj",
+            "head": 17,
+            "id": 6,
+            "tokens": [
+                17
+            ],
+            "type": "NP"
+        }
+    ],
+    "lang": "en",
+    "sentences": [
+        {
+            "id": 0,
+            "text": "Autonomous cars from the countryside of France shift insurance liability toward manufacturers.",
+            "tokenFrom": 0,
+            "tokenTo": 12,
+            "tokens": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        },
+        {
+            "id": 1,
+            "text": "People are afraid that they will crash.",
+            "tokenFrom": 13,
+            "tokenTo": 20,
+            "tokens": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ]
+        }
+    ],
+    "source": "SpaCy 2.0.16",
+    "text": "Autonomous cars from the countryside of France shift insurance liability toward manufacturers. People are afraid that they will crash.",
+    "tokenList": [
+        {
+            "characterOffsetBegin": 0,
+            "characterOffsetEnd": 10,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 0,
+            "lemma": "autonomous",
+            "overt": true,
+            "pos": "ADJ",
+            "text": "Autonomous"
+        },
+        {
+            "characterOffsetBegin": 11,
+            "characterOffsetEnd": 15,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 1,
+            "lemma": "car",
+            "overt": true,
+            "pos": "NOUN",
+            "text": "cars"
+        },
+        {
+            "characterOffsetBegin": 16,
+            "characterOffsetEnd": 20,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 2,
+            "lemma": "from",
+            "overt": true,
+            "pos": "ADP",
+            "text": "from"
+        },
+        {
+            "characterOffsetBegin": 21,
+            "characterOffsetEnd": 24,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 3,
+            "lemma": "the",
+            "overt": true,
+            "pos": "DET",
+            "text": "the"
+        },
+        {
+            "characterOffsetBegin": 25,
+            "characterOffsetEnd": 36,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 4,
+            "lemma": "countryside",
+            "overt": true,
+            "pos": "NOUN",
+            "text": "countryside"
+        },
+        {
+            "characterOffsetBegin": 37,
+            "characterOffsetEnd": 39,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 5,
+            "lemma": "of",
+            "overt": true,
+            "pos": "ADP",
+            "text": "of"
+        },
+        {
+            "characterOffsetBegin": 40,
+            "characterOffsetEnd": 46,
+            "entity": "GPE",
+            "entity_iob": "B",
+            "id": 6,
+            "lemma": "france",
+            "overt": true,
+            "pos": "PROPN",
+            "text": "France"
+        },
+        {
+            "characterOffsetBegin": 47,
+            "characterOffsetEnd": 52,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 7,
+            "lemma": "shift",
+            "overt": true,
+            "pos": "NOUN",
+            "text": "shift"
+        },
+        {
+            "characterOffsetBegin": 53,
+            "characterOffsetEnd": 62,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 8,
+            "lemma": "insurance",
+            "overt": true,
+            "pos": "NOUN",
+            "text": "insurance"
+        },
+        {
+            "characterOffsetBegin": 63,
+            "characterOffsetEnd": 72,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 9,
+            "lemma": "liability",
+            "overt": true,
+            "pos": "NOUN",
+            "text": "liability"
+        },
+        {
+            "characterOffsetBegin": 73,
+            "characterOffsetEnd": 79,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 10,
+            "lemma": "toward",
+            "overt": true,
+            "pos": "ADP",
+            "text": "toward"
+        },
+        {
+            "characterOffsetBegin": 80,
+            "characterOffsetEnd": 93,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 11,
+            "lemma": "manufacturer",
+            "overt": true,
+            "pos": "NOUN",
+            "text": "manufacturers"
+        },
+        {
+            "characterOffsetBegin": 93,
+            "characterOffsetEnd": 94,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 12,
+            "lemma": ".",
+            "overt": true,
+            "pos": "PUNCT",
+            "text": "."
+        },
+        {
+            "characterOffsetBegin": 95,
+            "characterOffsetEnd": 101,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 13,
+            "lemma": "people",
+            "overt": true,
+            "pos": "NOUN",
+            "text": "People"
+        },
+        {
+            "characterOffsetBegin": 102,
+            "characterOffsetEnd": 105,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 14,
+            "lemma": "be",
+            "overt": true,
+            "pos": "VERB",
+            "text": "are"
+        },
+        {
+            "characterOffsetBegin": 106,
+            "characterOffsetEnd": 112,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 15,
+            "lemma": "afraid",
+            "overt": true,
+            "pos": "ADJ",
+            "text": "afraid"
+        },
+        {
+            "characterOffsetBegin": 113,
+            "characterOffsetEnd": 117,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 16,
+            "lemma": "that",
+            "overt": true,
+            "pos": "ADP",
+            "text": "that"
+        },
+        {
+            "characterOffsetBegin": 118,
+            "characterOffsetEnd": 122,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 17,
+            "lemma": "-PRON-",
+            "overt": true,
+            "pos": "PRON",
+            "text": "they"
+        },
+        {
+            "characterOffsetBegin": 123,
+            "characterOffsetEnd": 127,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 18,
+            "lemma": "will",
+            "overt": true,
+            "pos": "VERB",
+            "text": "will"
+        },
+        {
+            "characterOffsetBegin": 128,
+            "characterOffsetEnd": 133,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 19,
+            "lemma": "crash",
+            "overt": true,
+            "pos": "VERB",
+            "text": "crash"
+        },
+        {
+            "characterOffsetBegin": 133,
+            "characterOffsetEnd": 134,
+            "entity": "",
+            "entity_iob": "O",
+            "id": 20,
+            "lemma": ".",
+            "overt": true,
+            "pos": "PUNCT",
+            "text": "."
+        }
+    ]
+}

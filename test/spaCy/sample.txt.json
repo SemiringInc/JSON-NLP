@@ -1,0 +1,1926 @@
+{
+    "conformsTo": 0.1,
+    "source": "SpaCy 2.0.16",
+    "created": "2018-11-30T16:32:07",
+    "date": "2018-11-30T16:32:07",
+    "dependenciesBasic": [
+        {
+            "type": "nsubj",
+            "governor": 1,
+            "dependent": 0
+        },
+        {
+            "type": "ROOT",
+            "governor": 1,
+            "dependent": 1
+        },
+        {
+            "type": "det",
+            "governor": 3,
+            "dependent": 2
+        },
+        {
+            "type": "attr",
+            "governor": 1,
+            "dependent": 3
+        },
+        {
+            "type": "prep",
+            "governor": 3,
+            "dependent": 4
+        },
+        {
+            "type": "det",
+            "governor": 6,
+            "dependent": 5
+        },
+        {
+            "type": "pobj",
+            "governor": 4,
+            "dependent": 6
+        },
+        {
+            "type": "acl",
+            "governor": 6,
+            "dependent": 7
+        },
+        {
+            "type": "prep",
+            "governor": 7,
+            "dependent": 8
+        },
+        {
+            "type": "poss",
+            "governor": 10,
+            "dependent": 9
+        },
+        {
+            "type": "pobj",
+            "governor": 8,
+            "dependent": 10
+        },
+        {
+            "type": "punct",
+            "governor": 1,
+            "dependent": 11
+        },
+        {
+            "type": "cc",
+            "governor": 1,
+            "dependent": 12
+        },
+        {
+            "type": "conj",
+            "governor": 1,
+            "dependent": 13
+        },
+        {
+            "type": "nsubj",
+            "governor": 16,
+            "dependent": 14
+        },
+        {
+            "type": "aux",
+            "governor": 16,
+            "dependent": 15
+        },
+        {
+            "type": "ccomp",
+            "governor": 13,
+            "dependent": 16
+        },
+        {
+            "type": "advmod",
+            "governor": 16,
+            "dependent": 17
+        },
+        {
+            "type": "prep",
+            "governor": 16,
+            "dependent": 18
+        },
+        {
+            "type": "poss",
+            "governor": 21,
+            "dependent": 19
+        },
+        {
+            "type": "amod",
+            "governor": 21,
+            "dependent": 20
+        },
+        {
+            "type": "pobj",
+            "governor": 18,
+            "dependent": 21
+        },
+        {
+            "type": "punct",
+            "governor": 1,
+            "dependent": 22
+        },
+        {
+            "type": "",
+            "governor": 22,
+            "dependent": 23
+        },
+        {
+            "type": "nsubj",
+            "governor": 27,
+            "dependent": 24
+        },
+        {
+            "type": "aux",
+            "governor": 27,
+            "dependent": 25
+        },
+        {
+            "type": "advmod",
+            "governor": 27,
+            "dependent": 26
+        },
+        {
+            "type": "ccomp",
+            "governor": 90,
+            "dependent": 27
+        },
+        {
+            "type": "poss",
+            "governor": 29,
+            "dependent": 28
+        },
+        {
+            "type": "dobj",
+            "governor": 27,
+            "dependent": 29
+        },
+        {
+            "type": "prep",
+            "governor": 29,
+            "dependent": 30
+        },
+        {
+            "type": "pobj",
+            "governor": 30,
+            "dependent": 31
+        },
+        {
+            "type": "punct",
+            "governor": 27,
+            "dependent": 32
+        },
+        {
+            "type": "advcl",
+            "governor": 27,
+            "dependent": 33
+        },
+        {
+            "type": "poss",
+            "governor": 35,
+            "dependent": 34
+        },
+        {
+            "type": "dobj",
+            "governor": 33,
+            "dependent": 35
+        },
+        {
+            "type": "det",
+            "governor": 37,
+            "dependent": 36
+        },
+        {
+            "type": "dobj",
+            "governor": 33,
+            "dependent": 37
+        },
+        {
+            "type": "punct",
+            "governor": 27,
+            "dependent": 38
+        },
+        {
+            "type": "prep",
+            "governor": 27,
+            "dependent": 39
+        },
+        {
+            "type": "prep",
+            "governor": 39,
+            "dependent": 40
+        },
+        {
+            "type": "det",
+            "governor": 43,
+            "dependent": 41
+        },
+        {
+            "type": "amod",
+            "governor": 43,
+            "dependent": 42
+        },
+        {
+            "type": "pobj",
+            "governor": 40,
+            "dependent": 43
+        },
+        {
+            "type": "",
+            "governor": 43,
+            "dependent": 44
+        },
+        {
+            "type": "prep",
+            "governor": 43,
+            "dependent": 45
+        },
+        {
+            "type": "det",
+            "governor": 47,
+            "dependent": 46
+        },
+        {
+            "type": "pobj",
+            "governor": 45,
+            "dependent": 47
+        },
+        {
+            "type": "punct",
+            "governor": 27,
+            "dependent": 48
+        },
+        {
+            "type": "cc",
+            "governor": 27,
+            "dependent": 49
+        },
+        {
+            "type": "conj",
+            "governor": 27,
+            "dependent": 50
+        },
+        {
+            "type": "prep",
+            "governor": 50,
+            "dependent": 51
+        },
+        {
+            "type": "det",
+            "governor": 54,
+            "dependent": 52
+        },
+        {
+            "type": "compound",
+            "governor": 54,
+            "dependent": 53
+        },
+        {
+            "type": "pobj",
+            "governor": 51,
+            "dependent": 54
+        },
+        {
+            "type": "prep",
+            "governor": 54,
+            "dependent": 55
+        },
+        {
+            "type": "det",
+            "governor": 57,
+            "dependent": 56
+        },
+        {
+            "type": "pobj",
+            "governor": 55,
+            "dependent": 57
+        },
+        {
+            "type": "punct",
+            "governor": 50,
+            "dependent": 58
+        },
+        {
+            "type": "aux",
+            "governor": 60,
+            "dependent": 59
+        },
+        {
+            "type": "conj",
+            "governor": 50,
+            "dependent": 60
+        },
+        {
+            "type": "det",
+            "governor": 63,
+            "dependent": 61
+        },
+        {
+            "type": "amod",
+            "governor": 63,
+            "dependent": 62
+        },
+        {
+            "type": "dobj",
+            "governor": 60,
+            "dependent": 63
+        },
+        {
+            "type": "prep",
+            "governor": 63,
+            "dependent": 64
+        },
+        {
+            "type": "det",
+            "governor": 66,
+            "dependent": 65
+        },
+        {
+            "type": "pobj",
+            "governor": 64,
+            "dependent": 66
+        },
+        {
+            "type": "prep",
+            "governor": 66,
+            "dependent": 67
+        },
+        {
+            "type": "",
+            "governor": 67,
+            "dependent": 68
+        },
+        {
+            "type": "pobj",
+            "governor": 67,
+            "dependent": 69
+        },
+        {
+            "type": "punct",
+            "governor": 50,
+            "dependent": 70
+        },
+        {
+            "type": "expl",
+            "governor": 72,
+            "dependent": 71
+        },
+        {
+            "type": "intj",
+            "governor": 70,
+            "dependent": 72
+        },
+        {
+            "type": "attr",
+            "governor": 72,
+            "dependent": 73
+        },
+        {
+            "type": "prep",
+            "governor": 73,
+            "dependent": 74
+        },
+        {
+            "type": "pobj",
+            "governor": 74,
+            "dependent": 75
+        },
+        {
+            "type": "conj",
+            "governor": 50,
+            "dependent": 76
+        },
+        {
+            "type": "advmod",
+            "governor": 76,
+            "dependent": 77
+        },
+        {
+            "type": "advmod",
+            "governor": 80,
+            "dependent": 78
+        },
+        {
+            "type": "amod",
+            "governor": 80,
+            "dependent": 79
+        },
+        {
+            "type": "dobj",
+            "governor": 76,
+            "dependent": 80
+        },
+        {
+            "type": "punct",
+            "governor": 80,
+            "dependent": 81
+        },
+        {
+            "type": "nsubj",
+            "governor": 86,
+            "dependent": 82
+        },
+        {
+            "type": "prep",
+            "governor": 86,
+            "dependent": 83
+        },
+        {
+            "type": "det",
+            "governor": 85,
+            "dependent": 84
+        },
+        {
+            "type": "pobj",
+            "governor": 83,
+            "dependent": 85
+        },
+        {
+            "type": "relcl",
+            "governor": 80,
+            "dependent": 86
+        },
+        {
+            "type": "punct",
+            "governor": 90,
+            "dependent": 87
+        },
+        {
+            "type": "nsubj",
+            "governor": 90,
+            "dependent": 88
+        },
+        {
+            "type": "advmod",
+            "governor": 90,
+            "dependent": 89
+        },
+        {
+            "type": "ROOT",
+            "governor": 90,
+            "dependent": 90
+        },
+        {
+            "type": "punct",
+            "governor": 90,
+            "dependent": 91
+        },
+        {
+            "type": "",
+            "governor": 91,
+            "dependent": 92
+        },
+        {
+            "type": "det",
+            "governor": 96,
+            "dependent": 93
+        },
+        {
+            "type": "advmod",
+            "governor": 95,
+            "dependent": 94
+        },
+        {
+            "type": "amod",
+            "governor": 96,
+            "dependent": 95
+        },
+        {
+            "type": "npadvmod",
+            "governor": 90,
+            "dependent": 96
+        },
+        {
+            "type": "punct",
+            "governor": 90,
+            "dependent": 97
+        }
+    ],
+    "expressions": [
+        {
+            "id": 0,
+            "type": "NP",
+            "head": 0,
+            "dep": "nsubj",
+            "tokens": [
+                0
+            ]
+        },
+        {
+            "id": 1,
+            "type": "NP",
+            "head": 3,
+            "dep": "attr",
+            "tokens": [
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "id": 2,
+            "type": "NP",
+            "head": 6,
+            "dep": "pobj",
+            "tokens": [
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "id": 3,
+            "type": "NP",
+            "head": 10,
+            "dep": "pobj",
+            "tokens": [
+                9,
+                10
+            ]
+        },
+        {
+            "id": 4,
+            "type": "NP",
+            "head": 14,
+            "dep": "nsubj",
+            "tokens": [
+                14
+            ]
+        },
+        {
+            "id": 5,
+            "type": "NP",
+            "head": 21,
+            "dep": "pobj",
+            "tokens": [
+                19,
+                20,
+                21
+            ]
+        },
+        {
+            "id": 6,
+            "type": "NP",
+            "head": 24,
+            "dep": "nsubj",
+            "tokens": [
+                24
+            ]
+        },
+        {
+            "id": 7,
+            "type": "NP",
+            "head": 29,
+            "dep": "dobj",
+            "tokens": [
+                28,
+                29,
+                30
+            ]
+        },
+        {
+            "id": 8,
+            "type": "NP",
+            "head": 31,
+            "dep": "pobj",
+            "tokens": [
+                31
+            ]
+        },
+        {
+            "id": 9,
+            "type": "NP",
+            "head": 35,
+            "dep": "dobj",
+            "tokens": [
+                34,
+                35
+            ]
+        },
+        {
+            "id": 10,
+            "type": "NP",
+            "head": 37,
+            "dep": "dobj",
+            "tokens": [
+                36,
+                37
+            ]
+        },
+        {
+            "id": 11,
+            "type": "NP",
+            "head": 43,
+            "dep": "pobj",
+            "tokens": [
+                41,
+                42,
+                43,
+                44,
+                45
+            ]
+        },
+        {
+            "id": 12,
+            "type": "NP",
+            "head": 47,
+            "dep": "pobj",
+            "tokens": [
+                46,
+                47
+            ]
+        },
+        {
+            "id": 13,
+            "type": "NP",
+            "head": 54,
+            "dep": "pobj",
+            "tokens": [
+                52,
+                53,
+                54,
+                55
+            ]
+        },
+        {
+            "id": 14,
+            "type": "NP",
+            "head": 57,
+            "dep": "pobj",
+            "tokens": [
+                56,
+                57
+            ]
+        },
+        {
+            "id": 15,
+            "type": "NP",
+            "head": 63,
+            "dep": "dobj",
+            "tokens": [
+                61,
+                62,
+                63,
+                64
+            ]
+        },
+        {
+            "id": 16,
+            "type": "NP",
+            "head": 66,
+            "dep": "pobj",
+            "tokens": [
+                65,
+                66,
+                67
+            ]
+        },
+        {
+            "id": 17,
+            "type": "NP",
+            "head": 69,
+            "dep": "pobj",
+            "tokens": [
+                69
+            ]
+        },
+        {
+            "id": 18,
+            "type": "NP",
+            "head": 75,
+            "dep": "pobj",
+            "tokens": [
+                75
+            ]
+        },
+        {
+            "id": 19,
+            "type": "NP",
+            "head": 80,
+            "dep": "dobj",
+            "tokens": [
+                78,
+                79,
+                80,
+                81,
+                86
+            ]
+        },
+        {
+            "id": 20,
+            "type": "NP",
+            "head": 85,
+            "dep": "pobj",
+            "tokens": [
+                84,
+                85
+            ]
+        },
+        {
+            "id": 21,
+            "type": "NP",
+            "head": 88,
+            "dep": "nsubj",
+            "tokens": [
+                88
+            ]
+        }
+    ],
+    "text": "It was the night before the day fixed for his coronation, and theyoung King was sitting alone in his beautiful chamber.\nHiscourtiers had all taken their leave of him, bowing their heads tothe ground, according to the ceremonious usage\nof the day, and hadretired to the Great Hall of the Palace, to receive a few lastlessons from the Professor of\nEtiquette; there being some of themwho had still quite natural manners, which in a courtier is, I needhardly say,\na very grave offence.",
+    "sentences": [
+        {
+            "id": 0,
+            "text": "It was the night before the day fixed for his coronation, and theyoung King was sitting alone in his beautiful chamber.\n",
+            "tokenFrom": 0,
+            "tokenTo": 23,
+            "tokens": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+            ]
+        },
+        {
+            "id": 1,
+            "text": "Hiscourtiers had all taken their leave of him, bowing their heads tothe ground, according to the ceremonious usage\nof the day, and hadretired to the Great Hall of the Palace, to receive a few lastlessons from the Professor of\nEtiquette; there being some of themwho had still quite natural manners, which in a courtier is, I needhardly say,\na very grave offence.",
+            "tokenFrom": 24,
+            "tokenTo": 97,
+            "tokens": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97
+            ]
+        }
+    ],
+    "tokenList": [
+        {
+            "id": 0,
+            "text": "It",
+            "lemma": "-PRON-",
+            "pos": "PRON",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 0,
+            "characterOffsetEnd": 2
+        },
+        {
+            "id": 1,
+            "text": "was",
+            "lemma": "be",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 3,
+            "characterOffsetEnd": 6
+        },
+        {
+            "id": 2,
+            "text": "the",
+            "lemma": "the",
+            "pos": "DET",
+            "entity": "TIME",
+            "entity_iob": "B",
+            "overt": true,
+            "characterOffsetBegin": 7,
+            "characterOffsetEnd": 10
+        },
+        {
+            "id": 3,
+            "text": "night",
+            "lemma": "night",
+            "pos": "NOUN",
+            "entity": "TIME",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 11,
+            "characterOffsetEnd": 16
+        },
+        {
+            "id": 4,
+            "text": "before",
+            "lemma": "before",
+            "pos": "ADP",
+            "entity": "TIME",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 17,
+            "characterOffsetEnd": 23
+        },
+        {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "pos": "DET",
+            "entity": "DATE",
+            "entity_iob": "B",
+            "overt": true,
+            "characterOffsetBegin": 24,
+            "characterOffsetEnd": 27
+        },
+        {
+            "id": 6,
+            "text": "day",
+            "lemma": "day",
+            "pos": "NOUN",
+            "entity": "DATE",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 28,
+            "characterOffsetEnd": 31
+        },
+        {
+            "id": 7,
+            "text": "fixed",
+            "lemma": "fix",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 32,
+            "characterOffsetEnd": 37
+        },
+        {
+            "id": 8,
+            "text": "for",
+            "lemma": "for",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 38,
+            "characterOffsetEnd": 41
+        },
+        {
+            "id": 9,
+            "text": "his",
+            "lemma": "-PRON-",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 42,
+            "characterOffsetEnd": 45
+        },
+        {
+            "id": 10,
+            "text": "coronation",
+            "lemma": "coronation",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 46,
+            "characterOffsetEnd": 56
+        },
+        {
+            "id": 11,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 56,
+            "characterOffsetEnd": 57
+        },
+        {
+            "id": 12,
+            "text": "and",
+            "lemma": "and",
+            "pos": "CCONJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 58,
+            "characterOffsetEnd": 61
+        },
+        {
+            "id": 13,
+            "text": "theyoung",
+            "lemma": "theyoung",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 62,
+            "characterOffsetEnd": 70
+        },
+        {
+            "id": 14,
+            "text": "King",
+            "lemma": "king",
+            "pos": "PROPN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 71,
+            "characterOffsetEnd": 75
+        },
+        {
+            "id": 15,
+            "text": "was",
+            "lemma": "be",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 76,
+            "characterOffsetEnd": 79
+        },
+        {
+            "id": 16,
+            "text": "sitting",
+            "lemma": "sit",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 80,
+            "characterOffsetEnd": 87
+        },
+        {
+            "id": 17,
+            "text": "alone",
+            "lemma": "alone",
+            "pos": "ADV",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 88,
+            "characterOffsetEnd": 93
+        },
+        {
+            "id": 18,
+            "text": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 94,
+            "characterOffsetEnd": 96
+        },
+        {
+            "id": 19,
+            "text": "his",
+            "lemma": "-PRON-",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 97,
+            "characterOffsetEnd": 100
+        },
+        {
+            "id": 20,
+            "text": "beautiful",
+            "lemma": "beautiful",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 101,
+            "characterOffsetEnd": 110
+        },
+        {
+            "id": 21,
+            "text": "chamber",
+            "lemma": "chamber",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 111,
+            "characterOffsetEnd": 118
+        },
+        {
+            "id": 22,
+            "text": ".",
+            "lemma": ".",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 118,
+            "characterOffsetEnd": 119
+        },
+        {
+            "id": 23,
+            "text": "\n",
+            "lemma": "\n",
+            "pos": "SPACE",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 119,
+            "characterOffsetEnd": 120
+        },
+        {
+            "id": 24,
+            "text": "Hiscourtiers",
+            "lemma": "hiscourtiers",
+            "pos": "PROPN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 120,
+            "characterOffsetEnd": 132
+        },
+        {
+            "id": 25,
+            "text": "had",
+            "lemma": "have",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 133,
+            "characterOffsetEnd": 136
+        },
+        {
+            "id": 26,
+            "text": "all",
+            "lemma": "all",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 137,
+            "characterOffsetEnd": 140
+        },
+        {
+            "id": 27,
+            "text": "taken",
+            "lemma": "take",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 141,
+            "characterOffsetEnd": 146
+        },
+        {
+            "id": 28,
+            "text": "their",
+            "lemma": "-PRON-",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 147,
+            "characterOffsetEnd": 152
+        },
+        {
+            "id": 29,
+            "text": "leave",
+            "lemma": "leave",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 153,
+            "characterOffsetEnd": 158
+        },
+        {
+            "id": 30,
+            "text": "of",
+            "lemma": "of",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 159,
+            "characterOffsetEnd": 161
+        },
+        {
+            "id": 31,
+            "text": "him",
+            "lemma": "-PRON-",
+            "pos": "PRON",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 162,
+            "characterOffsetEnd": 165
+        },
+        {
+            "id": 32,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 165,
+            "characterOffsetEnd": 166
+        },
+        {
+            "id": 33,
+            "text": "bowing",
+            "lemma": "bow",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 167,
+            "characterOffsetEnd": 173
+        },
+        {
+            "id": 34,
+            "text": "their",
+            "lemma": "-PRON-",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 174,
+            "characterOffsetEnd": 179
+        },
+        {
+            "id": 35,
+            "text": "heads",
+            "lemma": "head",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 180,
+            "characterOffsetEnd": 185
+        },
+        {
+            "id": 36,
+            "text": "tothe",
+            "lemma": "tothe",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 186,
+            "characterOffsetEnd": 191
+        },
+        {
+            "id": 37,
+            "text": "ground",
+            "lemma": "ground",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 192,
+            "characterOffsetEnd": 198
+        },
+        {
+            "id": 38,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 198,
+            "characterOffsetEnd": 199
+        },
+        {
+            "id": 39,
+            "text": "according",
+            "lemma": "accord",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 200,
+            "characterOffsetEnd": 209
+        },
+        {
+            "id": 40,
+            "text": "to",
+            "lemma": "to",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 210,
+            "characterOffsetEnd": 212
+        },
+        {
+            "id": 41,
+            "text": "the",
+            "lemma": "the",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 213,
+            "characterOffsetEnd": 216
+        },
+        {
+            "id": 42,
+            "text": "ceremonious",
+            "lemma": "ceremonious",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 217,
+            "characterOffsetEnd": 228
+        },
+        {
+            "id": 43,
+            "text": "usage",
+            "lemma": "usage",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 229,
+            "characterOffsetEnd": 234
+        },
+        {
+            "id": 44,
+            "text": "\n",
+            "lemma": "\n",
+            "pos": "SPACE",
+            "entity": "GPE",
+            "entity_iob": "B",
+            "overt": true,
+            "characterOffsetBegin": 234,
+            "characterOffsetEnd": 235
+        },
+        {
+            "id": 45,
+            "text": "of",
+            "lemma": "of",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 235,
+            "characterOffsetEnd": 237
+        },
+        {
+            "id": 46,
+            "text": "the",
+            "lemma": "the",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 238,
+            "characterOffsetEnd": 241
+        },
+        {
+            "id": 47,
+            "text": "day",
+            "lemma": "day",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 242,
+            "characterOffsetEnd": 245
+        },
+        {
+            "id": 48,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 245,
+            "characterOffsetEnd": 246
+        },
+        {
+            "id": 49,
+            "text": "and",
+            "lemma": "and",
+            "pos": "CCONJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 247,
+            "characterOffsetEnd": 250
+        },
+        {
+            "id": 50,
+            "text": "hadretired",
+            "lemma": "hadretir",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 251,
+            "characterOffsetEnd": 261
+        },
+        {
+            "id": 51,
+            "text": "to",
+            "lemma": "to",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 262,
+            "characterOffsetEnd": 264
+        },
+        {
+            "id": 52,
+            "text": "the",
+            "lemma": "the",
+            "pos": "DET",
+            "entity": "FAC",
+            "entity_iob": "B",
+            "overt": true,
+            "characterOffsetBegin": 265,
+            "characterOffsetEnd": 268
+        },
+        {
+            "id": 53,
+            "text": "Great",
+            "lemma": "great",
+            "pos": "PROPN",
+            "entity": "FAC",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 269,
+            "characterOffsetEnd": 274
+        },
+        {
+            "id": 54,
+            "text": "Hall",
+            "lemma": "hall",
+            "pos": "PROPN",
+            "entity": "FAC",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 275,
+            "characterOffsetEnd": 279
+        },
+        {
+            "id": 55,
+            "text": "of",
+            "lemma": "of",
+            "pos": "ADP",
+            "entity": "FAC",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 280,
+            "characterOffsetEnd": 282
+        },
+        {
+            "id": 56,
+            "text": "the",
+            "lemma": "the",
+            "pos": "DET",
+            "entity": "FAC",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 283,
+            "characterOffsetEnd": 286
+        },
+        {
+            "id": 57,
+            "text": "Palace",
+            "lemma": "palace",
+            "pos": "PROPN",
+            "entity": "FAC",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 287,
+            "characterOffsetEnd": 293
+        },
+        {
+            "id": 58,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 293,
+            "characterOffsetEnd": 294
+        },
+        {
+            "id": 59,
+            "text": "to",
+            "lemma": "to",
+            "pos": "PART",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 295,
+            "characterOffsetEnd": 297
+        },
+        {
+            "id": 60,
+            "text": "receive",
+            "lemma": "receive",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 298,
+            "characterOffsetEnd": 305
+        },
+        {
+            "id": 61,
+            "text": "a",
+            "lemma": "a",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 306,
+            "characterOffsetEnd": 307
+        },
+        {
+            "id": 62,
+            "text": "few",
+            "lemma": "few",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 308,
+            "characterOffsetEnd": 311
+        },
+        {
+            "id": 63,
+            "text": "lastlessons",
+            "lemma": "lastlesson",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 312,
+            "characterOffsetEnd": 323
+        },
+        {
+            "id": 64,
+            "text": "from",
+            "lemma": "from",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 324,
+            "characterOffsetEnd": 328
+        },
+        {
+            "id": 65,
+            "text": "the",
+            "lemma": "the",
+            "pos": "DET",
+            "entity": "ORG",
+            "entity_iob": "B",
+            "overt": true,
+            "characterOffsetBegin": 329,
+            "characterOffsetEnd": 332
+        },
+        {
+            "id": 66,
+            "text": "Professor",
+            "lemma": "professor",
+            "pos": "PROPN",
+            "entity": "ORG",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 333,
+            "characterOffsetEnd": 342
+        },
+        {
+            "id": 67,
+            "text": "of",
+            "lemma": "of",
+            "pos": "ADP",
+            "entity": "ORG",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 343,
+            "characterOffsetEnd": 345
+        },
+        {
+            "id": 68,
+            "text": "\n",
+            "lemma": "\n",
+            "pos": "SPACE",
+            "entity": "ORG",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 345,
+            "characterOffsetEnd": 346
+        },
+        {
+            "id": 69,
+            "text": "Etiquette",
+            "lemma": "etiquette",
+            "pos": "PROPN",
+            "entity": "ORG",
+            "entity_iob": "I",
+            "overt": true,
+            "characterOffsetBegin": 346,
+            "characterOffsetEnd": 355
+        },
+        {
+            "id": 70,
+            "text": ";",
+            "lemma": ";",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 355,
+            "characterOffsetEnd": 356
+        },
+        {
+            "id": 71,
+            "text": "there",
+            "lemma": "there",
+            "pos": "ADV",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 357,
+            "characterOffsetEnd": 362
+        },
+        {
+            "id": 72,
+            "text": "being",
+            "lemma": "be",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 363,
+            "characterOffsetEnd": 368
+        },
+        {
+            "id": 73,
+            "text": "some",
+            "lemma": "some",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 369,
+            "characterOffsetEnd": 373
+        },
+        {
+            "id": 74,
+            "text": "of",
+            "lemma": "of",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 374,
+            "characterOffsetEnd": 376
+        },
+        {
+            "id": 75,
+            "text": "themwho",
+            "lemma": "themwho",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 377,
+            "characterOffsetEnd": 384
+        },
+        {
+            "id": 76,
+            "text": "had",
+            "lemma": "have",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 385,
+            "characterOffsetEnd": 388
+        },
+        {
+            "id": 77,
+            "text": "still",
+            "lemma": "still",
+            "pos": "ADV",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 389,
+            "characterOffsetEnd": 394
+        },
+        {
+            "id": 78,
+            "text": "quite",
+            "lemma": "quite",
+            "pos": "ADV",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 395,
+            "characterOffsetEnd": 400
+        },
+        {
+            "id": 79,
+            "text": "natural",
+            "lemma": "natural",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 401,
+            "characterOffsetEnd": 408
+        },
+        {
+            "id": 80,
+            "text": "manners",
+            "lemma": "manner",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 409,
+            "characterOffsetEnd": 416
+        },
+        {
+            "id": 81,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 416,
+            "characterOffsetEnd": 417
+        },
+        {
+            "id": 82,
+            "text": "which",
+            "lemma": "which",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 418,
+            "characterOffsetEnd": 423
+        },
+        {
+            "id": 83,
+            "text": "in",
+            "lemma": "in",
+            "pos": "ADP",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 424,
+            "characterOffsetEnd": 426
+        },
+        {
+            "id": 84,
+            "text": "a",
+            "lemma": "a",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 427,
+            "characterOffsetEnd": 428
+        },
+        {
+            "id": 85,
+            "text": "courtier",
+            "lemma": "courtier",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 429,
+            "characterOffsetEnd": 437
+        },
+        {
+            "id": 86,
+            "text": "is",
+            "lemma": "be",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 438,
+            "characterOffsetEnd": 440
+        },
+        {
+            "id": 87,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 440,
+            "characterOffsetEnd": 441
+        },
+        {
+            "id": 88,
+            "text": "I",
+            "lemma": "-PRON-",
+            "pos": "PRON",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 442,
+            "characterOffsetEnd": 443
+        },
+        {
+            "id": 89,
+            "text": "needhardly",
+            "lemma": "needhardly",
+            "pos": "ADV",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 444,
+            "characterOffsetEnd": 454
+        },
+        {
+            "id": 90,
+            "text": "say",
+            "lemma": "say",
+            "pos": "VERB",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 455,
+            "characterOffsetEnd": 458
+        },
+        {
+            "id": 91,
+            "text": ",",
+            "lemma": ",",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 458,
+            "characterOffsetEnd": 459
+        },
+        {
+            "id": 92,
+            "text": "\n",
+            "lemma": "\n",
+            "pos": "SPACE",
+            "entity": "GPE",
+            "entity_iob": "B",
+            "overt": true,
+            "characterOffsetBegin": 459,
+            "characterOffsetEnd": 460
+        },
+        {
+            "id": 93,
+            "text": "a",
+            "lemma": "a",
+            "pos": "DET",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 460,
+            "characterOffsetEnd": 461
+        },
+        {
+            "id": 94,
+            "text": "very",
+            "lemma": "very",
+            "pos": "ADV",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 462,
+            "characterOffsetEnd": 466
+        },
+        {
+            "id": 95,
+            "text": "grave",
+            "lemma": "grave",
+            "pos": "ADJ",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 467,
+            "characterOffsetEnd": 472
+        },
+        {
+            "id": 96,
+            "text": "offence",
+            "lemma": "offence",
+            "pos": "NOUN",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 473,
+            "characterOffsetEnd": 480
+        },
+        {
+            "id": 97,
+            "text": ".",
+            "lemma": ".",
+            "pos": "PUNCT",
+            "entity": "",
+            "entity_iob": "O",
+            "overt": true,
+            "characterOffsetBegin": 480,
+            "characterOffsetEnd": 481
+        }
+    ],
+    "lang": "en"
+}
