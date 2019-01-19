@@ -1,0 +1,206 @@
+{
+  "version": "0.1",
+  "NLPID": "SCNLP",
+  "parseTime": "2018-11-09T13:03:27.789244",
+  "author": "Jane Smith",
+  "DC.Publisher": "",
+  "DC.Creator": "",
+  "DC.Title": "",
+  "DC.Identifier": "file:///dhsjuy5.txt",
+  "DC.Language": "en; English",
+  "DC.Date": "2018-11-09T13:03:27.789244",
+  "DC.Date.Modified": "",
+  "DC.Description": "",
+  "DC.Type": "text",
+  "sentences": [
+    {
+      "id": 0,
+      "tokenFrom": 1,
+      "tokenTo": 34,
+      "sentiment": ""
+    },
+    {
+      "id": 1,
+      "tokenFrom": 34,
+      "tokenTo": 39,
+      "sentiment": ""
+    }
+  ],
+  "clauses": [
+    {
+      "id": 0,
+      "mainVerb": 3,
+      "root": 3,
+      "tokenList": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sentiment": ""
+    },
+    {
+      "id": 1,
+      "mainVerb": 7,
+      "root": 7,
+      "tokenList": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sentiment": ""
+    }
+  ],
+  "tokenList": [
+    {
+      "id": 1,
+      "word": "hi",
+      "lemma": "hi",
+      "characterOffsetBegin": 0,
+      "characterOffsetEnd": 3,
+      "POS": "",
+      "NER": "",
+      "speaker": "",
+      "foreign": false,
+      "overt": true,
+      "embeddings": [
+        {
+          "vector": [0.1, 0.2],
+          "model": "elmo"
+        },
+        {
+          "vector": [0.1, 0.2],
+          "model": "w2v"
+        }
+      ],
+      "characterEmbeddings": [
+        [0.1, 0.2],
+        [0.1, 0.2]
+      ],
+      "sentiment": ""
+    },
+    {
+      "id": 2,
+      "word": "there",
+      "lemma": "there",
+      "characterOffsetBegin": 4,
+      "characterOffsetEnd": 9,
+      "POS": "",
+      "NER": "",
+      "speaker": "",
+      "foreign": false,
+      "overt": true,
+      "embeddings": [
+        {
+          "vector": [0.1, 0.2],
+          "model": "elmo"
+        },
+        {
+          "vector": [0.1, 0.2],
+          "model": "w2v"
+        }
+      ],
+      "characterEmbeddings": [
+        [0.1, 0.2],
+        [0.1, 0.2]
+      ],
+      "sentiment": ""
+    }
+  ],
+  "dependenciesBasic": [
+    {
+      "type": "nsubj",
+      "governor": 1,
+      "dependent": 3
+    },
+    {
+      "type": "dobj",
+      "governor": 1,
+      "dependent": 4
+    }
+  ],
+  "dependenciesEnhanced": [
+    {
+      "type": "nsubj",
+      "governor": 1,
+      "dependent": 3
+    },
+    {
+      "type": "dobj",
+      "governor": 1,
+      "dependent": 4
+    }
+  ],
+  "coreferences": [
+    {
+      "representative": {},
+      "referents": [
+        {
+          "tokens": [
+            3,
+            6,
+            7
+          ],
+          "head": 6
+        },
+        {
+          "tokens": [
+            8,
+            9,
+            10
+          ],
+          "head": 8
+        }
+      ]
+    }
+  ],
+  "anaphoricRelations": [
+    { "id": 0,
+    "anaphora": [ 2 ],
+    "antecedent": [ 1, 2 ] }
+  ],
+  "constituentStructures": [
+    {
+      "id": 0,
+      "labeledBracketing": "(ROOT (S (NP (NP (NNP Charles) (NNP Bradford)) (, ,) (NP (NP (DT an) (NN analyst)) (PP (IN with) (NP (NNP Merrill) (NNP Lynch) (NNP Capital) (NNP Markets)))) (, ,)) (VP (VBD said) (SBAR (S (NP (NNP USX)) (VP (MD may) (VP (VB have) (VP (VBN received) (NP (NP (NNS orders)) (VP (VBN lost) (PP (IN by) (NP (NP (NNS competitors)) (SBAR (WHNP (WP who)) (S (VP (VBD were) (VP (VBN involved) (PP (IN in) (NP (NN labor) (NNS contracts))) (NP-TMP (RBR earlier) (DT this) (NN year)))))))))))))))) (. .)))",
+      "enumeratedLabeledBracketing": "(ROOT_0 (S_1 (NP_2 (NP_3 (NNP_4 Charles_5 ) (NNP_6 Bradford_7 )) (, ,) (NP (NP (DT an) (NN analyst)) (PP (IN with) (NP (NNP Merrill) (NNP Lynch) (NNP Capital) (NNP Markets)))) (, ,)) (VP (VBD said) (SBAR (S (NP (NNP USX)) (VP (MD may) (VP (VB have) (VP (VBN received) (NP (NP (NNS orders)) (VP (VBN lost) (PP (IN by) (NP (NP (NNS competitors)) (SBAR (WHNP (WP who)) (S (VP (VBD were) (VP (VBN involved) (PP (IN in) (NP (NN labor) (NNS contracts))) (NP-TMP (RBR earlier) (DT this) (NN year)))))))))))))))) (. .)))",
+      "nodes": [
+        {
+          "id": 0,
+          "label": "ROOT",
+          "directlyDominates": [
+            1
+          ],
+          "precedes": [],
+          "hasScopeOver": []
+        },
+        {
+          "id": 1,
+          "label": "S",
+          "directlyDominates": [
+            2,
+            9
+          ],
+          "precedes": [],
+          "hasScopeOver": []
+        }
+      ]
+    }
+  ],
+  "multiWordExpressions": [
+    {
+      "id": 0,
+      "tokens": [
+        3,
+        4,
+        6
+      ],
+      "type": "PERSON"
+    }
+  ]
+}
