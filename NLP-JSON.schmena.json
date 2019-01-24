@@ -1,5 +1,4 @@
 {
-  "__todo__": "add format (json), contributor, coverage, subject",
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://example.com/root.json",
@@ -124,6 +123,105 @@
       ],
       "pattern": "^(.*)$"
     },
+    "paragraphs": {
+      "$id": "#/properties/paragraphs",
+      "type": "array",
+      "title": "The Paragraphs Schema",
+      "items": {
+        "$id": "#/properties/sentences/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "id",
+          "tokenFrom",
+          "tokenTo"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#/properties/paragraphs/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema",
+            "description": "Unique paragraph ID",
+            "default": 0,
+            "examples": [
+              0,
+              1,
+              2
+            ]
+          },
+          "tokenFrom": {
+            "$id": "#/properties/paragraphs/items/properties/tokenFrom",
+            "type": "integer",
+            "title": "The tokenFrom Schema",
+            "description": "Start token, inclusive",
+            "default": 0,
+            "examples": [
+              1,
+              2,
+              3
+            ]
+          },
+          "tokenTo": {
+            "$id": "#/properties/paragraphs/items/properties/tokenTo",
+            "type": "integer",
+            "title": "The tokenTo Schema",
+            "description": "End token, inclusive",
+            "default": 0,
+            "examples": [
+              34,
+              35,
+              36
+            ]
+          },
+          "sentiment": {
+            "$id": "#/properties/paragraphs/items/properties/sentiment",
+            "type": "string",
+            "title": "The Sentiment Schema",
+            "examples": [
+              -1.5, "neutral", "very negative"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "embeddings": {
+            "$id": "#/properties/paragraphs/items/properties/embeddings",
+            "type": "array",
+            "title": "The Embeddings Schema",
+            "description": "Allow for paragraph-level embeddings from multiple sources",
+            "items": {
+              "$id": "#/properties/paragraphs/items/properties/embeddings/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "vector",
+                "model"
+              ],
+              "properties": {
+                "vector": {
+                  "$id": "#/properties/paragraphs/items/properties/embeddings/items/properties/vector",
+                  "type": "array",
+                  "title": "The Vector Schema",
+                  "items": {
+                    "$id": "#/properties/paragraphs/items/properties/embeddings/items/properties/vector/items",
+                    "type": "number",
+                    "title": "The Features Schema"
+                  }
+                },
+                "model": {
+                  "$id": "#/properties/paragraphs/items/properties/embeddings/items/properties/model",
+                  "type": "string",
+                  "title": "The Model Schema",
+                  "description": "Which model, language, version are these embeddings from?",
+                  "examples": [
+                    "USE", "Skip-Thought"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "sentences": {
       "$id": "#/properties/sentences",
       "type": "array",
@@ -206,6 +304,43 @@
               "interrogative"
             ],
             "pattern": "^(interrogative|alternative question|declarative question|direct question|indirect question|display question|echo question|embedded question|hypophora|leading question|declarative|rhetorical question|tag question|wh question|whimperative|yes-no question)$"
+          },
+          "embeddings": {
+            "$id": "#/properties/sentences/items/properties/embeddings",
+            "type": "array",
+            "title": "The Embeddings Schema",
+            "description": "Allow for sentences-level embeddings from multiple sources",
+            "items": {
+              "$id": "#/properties/sentences/items/properties/embeddings/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "vector",
+                "model"
+              ],
+              "properties": {
+                "vector": {
+                  "$id": "#/properties/sentences/items/properties/embeddings/items/properties/vector",
+                  "type": "array",
+                  "title": "The Vector Schema",
+                  "items": {
+                    "$id": "#/properties/sentences/items/properties/embeddings/items/properties/vector/items",
+                    "type": "number",
+                    "title": "The Features Schema"
+                  }
+                },
+                "model": {
+                  "$id": "#/properties/sentences/items/properties/embeddings/items/properties/model",
+                  "type": "string",
+                  "title": "The Model Schema",
+                  "description": "Which model, language, version are these embeddings from?",
+                  "examples": [
+                    "USE", "Skip-Thought", "mean-pooling"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
           }
         }
       }
