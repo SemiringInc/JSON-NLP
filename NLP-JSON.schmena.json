@@ -223,6 +223,7 @@
           "sentenceId",
           "type",
           "mainVerb",
+          "root",
           "tokenList"
         ],
         "properties": {
