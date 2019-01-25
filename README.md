@@ -26,7 +26,7 @@ For licensing details see the LICENSE file. All NLP-Lab code is published under 
 
 To cite this work, refer to the paper:
 
-Damir Cavar, Oren Baldinger, Joshua Herring, Umang Mehta, Yiwen Zhang, Shantanu Bedekar, Shreejith Panicker (2019) An Annotation Encoding Schema for Natural Language Processing using JSON: NLP JSON Schema Version 0.1. Technical Report, NLP Lab, Indiana University, Version 1.0 from November 2018.
+[Damir Cavar], Oren Baldinger, Joshua Herring, Umang Mehta, Yiwen Zhang, Shantanu Bedekar, Shreejith Panicker (2019) An Annotation Encoding Schema for Natural Language Processing using JSON: NLP JSON Schema Version 0.1. Technical Report, NLP Lab, Indiana University, Version 1.0 from November 2018.
 
 (Link to paper is coming soon)
 
@@ -34,3 +34,7 @@ Damir Cavar, Oren Baldinger, Joshua Herring, Umang Mehta, Yiwen Zhang, Shantanu 
 This code, documentation, and examples are brought to you by the [NLP-Lab.org](https://nlp-lab.org/).
 
 (C) 2018-2019 The [NLP-Lab.org](https://nlp-lab.org/)
+
+
+[Damir Cavar]: http://damir.cavar.me/ "Damir Cavar"
+
