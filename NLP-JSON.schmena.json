@@ -14,7 +14,7 @@
     "dependenciesEnhanced",
     "coreferences",
     "constituentStructures",
-    "multiWordExpressions"
+    "expressions"
   ],
   "properties": {
     "DC.conformsTo": {
