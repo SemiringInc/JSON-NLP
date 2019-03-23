@@ -3,6 +3,146 @@
   "title": "The NLP-JSON Schema",
   "type": "object",
   "definitions": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["DC.conformsTo"],
+      "properties": {
+        "DC.conformsTo": {
+          "type": "number",
+          "description": "The NLP-JSON Schema Version",
+          "default": 0.1,
+          "pattern": "^\\d+\\.\\d+(\\.\\d+)*$"
+        },
+        "DC.source": {
+          "type": "string",
+          "description": "The NLP system from which this document was created",
+          "examples": [
+            "CoreNLP",
+            "SpaCy"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.created": {
+          "$id": "#/properties/DC.created",
+          "type": "string",
+          "description": "The parse time of the document, in ISO 8601 format",
+          "examples": [
+            "2018-11-09T13:03:27.789244"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.date": {
+          "$id": "#/properties/DC.date",
+          "type": "string",
+          "description": "The time of the most recent modification to the document, in ISO 8601 format",
+          "examples": [
+            "2018-11-09T13:05:27.789244"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.creator": {
+          "$id": "#/properties/DC.creator",
+          "type": "string",
+          "description": "The person at whose behest the document was parsed",
+          "examples": [
+            "Jane Smith"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.publisher": {
+          "$id": "#/properties/DC.publisher",
+          "type": "string",
+          "description": "Organization associated with this parse",
+          "examples": [
+            "Indiana University"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.title": {
+          "$id": "#/properties/DC.title",
+          "type": "string",
+          "description": "The title of the document parsed",
+          "examples": [
+            "Dublin Core",
+            "dhsjuy5.txt"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.description": {
+          "$id": "#/properties/DC.description",
+          "type": "string",
+          "examples": [
+            "A website providing a metadata standard"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.identifier": {
+          "$id": "#/properties/DC.identifier",
+          "type": "string",
+          "description": "Complete reference to the original document that was parsed",
+          "examples": [
+            "http://www.dublincore.org",
+            "file:///dhsjuy5.txt"
+          ],
+          "pattern": "^(.+)$"
+        },
+        "DC.language": {
+          "$id": "#/properties/DC.language",
+          "type": "string",
+          "description": "ISO 639-1 or 639-2 language specification",
+          "examples": [
+            "en, eng, dud (B)"
+          ],
+          "pattern": "^[a-z]{2}([a-z]( \\([BT]\\)?))?$"
+        },
+        "DC.subject" : {
+          "type": "string"
+        },
+        "DC.contributors" : {
+          "type": "string"
+        },
+        "DC.type" : {
+          "type": "string"
+        },
+        "DC.format" : {
+          "type": "string"
+        },
+        "DC.relation" : {
+          "type": "string"
+        },
+        "DC.coverage" : {
+          "type": "string"
+        },
+        "DC.rights" : {
+          "type": "string"
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tokens": {
+              "type": "integer"
+            },
+            "sentences": {
+              "type": "integer"
+            },
+            "clauses": {
+              "type": "integer"
+            },
+            "paragraphs": {
+              "type": "integer"
+            },
+            "documents": {
+              "type": "integer"
+            },
+            "entities": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
     "tokenIdList": {
       "type": "array",
       "description": "Token id lists cannot be empty",
@@ -122,107 +262,11 @@
       }
     }
   },
-  "required": [
-    "DC.conformsTo",
-    "documents"
-  ],
+  "required": ["documents"],
   "additionalProperties": false,
   "properties": {
-    "DC.conformsTo": {
-      "$id": "#/properties/DC.conformsTo",
-      "type": "number",
-      "description": "The LingData Version Schema",
-      "default": 0.1,
-      "examples": [
-        0.1
-      ],
-      "pattern": "^\\d+\\.\\d+(\\.\\d+)*$"
-    },
-    "DC.source": {
-      "$id": "#/properties/DC.source",
-      "type": "string",
-      "description": "The NLP system from which this document was created",
-      "examples": [
-        "SCNLP",
-        "CoreNLP",
-        "SpaCy",
-        "SyntaxNet",
-        "AwesomeNLP"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.created": {
-      "$id": "#/properties/DC.created",
-      "type": "string",
-      "description": "The parse time of the document, in ISO 8601 format",
-      "examples": [
-        "2018-11-09T13:03:27.789244"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.date": {
-      "$id": "#/properties/DC.date",
-      "type": "string",
-      "description": "The time of the most recent modification to the document, in ISO 8601 format",
-      "examples": [
-        "2018-11-09T13:05:27.789244"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.creator": {
-      "$id": "#/properties/DC.creator",
-      "type": "string",
-      "description": "The person at whose behest the document was parsed",
-      "examples": [
-        "Jane Smith"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.publisher": {
-      "$id": "#/properties/DC.publisher",
-      "type": "string",
-      "description": "Organization associated with this parse",
-      "examples": [
-        "Indiana University"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.title": {
-      "$id": "#/properties/DC.title",
-      "type": "string",
-      "description": "The title of the document parsed",
-      "examples": [
-        "Dublin Core",
-        "dhsjuy5.txt"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.description": {
-      "$id": "#/properties/DC.description",
-      "type": "string",
-      "examples": [
-        "A website providing a metadata standard"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.identifier": {
-      "$id": "#/properties/DC.identifier",
-      "type": "string",
-      "description": "Complete reference to the original document that was parsed",
-      "examples": [
-        "http://www.dublincore.org",
-        "file:///dhsjuy5.txt"
-      ],
-      "pattern": "^(.+)$"
-    },
-    "DC.language": {
-      "$id": "#/properties/DC.language",
-      "type": "string",
-      "description": "ISO 639-1 or 639-2 language specification",
-      "examples": [
-        "en, eng, dud (B)"
-      ],
-      "pattern": "^[a-z]{2}([a-z]( \\([BT]\\)?))?$"
+    "meta": {
+      "$ref": "#/definitions/meta"
     },
     "conll": {
       "description": "Metadata for parsing to and from CoNLL formats",
@@ -243,11 +287,15 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
+        "required": ["tokenList"],
         "properties": {
           "id": {
             "type": "string",
             "description": "Document ID",
             "pattern": "^.+$"
+          },
+          "meta": {
+            "$ref": "#/definitions/meta"
           },
           "text": {
             "$id": "#/properties/documents/text",
@@ -695,29 +743,7 @@
                           "items": {
                             "type": "number"
                           }
-                        },
-                        "examples": [
-                          [
-                            [
-                              0,
-                              0,
-                              1,
-                              0
-                            ],
-                            [
-                              1,
-                              0,
-                              0,
-                              0
-                            ],
-                            [
-                              1,
-                              0,
-                              0,
-                              0
-                            ]
-                          ]
-                        ]
+                        }
                       }
                     }
                   }
@@ -728,76 +754,47 @@
               }
             }
           },
-          "dependenciesBasic": {
-            "$id": "#/properties/documents/dependenciesBasic",
+          "dependencies": {
+            "$id": "#/properties/documents/dependencies",
+            "description": "Dependency graphs of any style",
             "type": "array",
-            "description": "Unlabeled arcs should be marked as unlabeled",
             "items": {
               "type": "object",
-              "required": [
-                "label",
-                "governor",
-                "dependent"
-              ],
               "additionalProperties": false,
+              "required": ["arcs"],
               "properties": {
-                "label": {
+                "style": {
                   "type": "string",
-                  "description": "Unlabeled arcs should be marked as unlabeled",
-                  "default": "unlabeled",
-                  "examples": [
-                    "nsubj",
-                    "unlabeled"
-                  ],
-                  "pattern": "^[a-z]+(:[a-z]+)?$"
+                  "examples": ["collapsed", "universal", "enhanced"]
                 },
-                "governor": {
-                  "type": "integer",
-                  "description": "Token Id corresponding to the governor"
-                },
-                "dependent": {
-                  "type": "integer",
-                  "description": "Token Id corresponding to the dependent"
-                },
-                "scores": {
-                  "$ref": "#/definitions/scores"
-                }
-              }
-            }
-          },
-          "dependenciesEnhanced": {
-            "$id": "#/properties/documents/dependenciesEnhanced",
-            "type": "array",
-            "description": "Each item describes a labeled arc of the dependency graph.",
-            "items": {
-              "type": "object",
-              "required": [
-                "label",
-                "governor",
-                "dependent"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "type": {
-                  "description": "Unlabeled arcs should be marked as unlabeled",
-                  "type": "string",
-                  "examples": [
-                    "nsubj",
-                    "unlabeled",
-                    "acl:relcl"
-                  ],
-                  "pattern": "^[a-z]+(:[a-z]+)?(:[\\p{Ll}\\p{Lm}\\p{Lo}\\p{M}]+(_[\\p{Ll}\\p{Lm}\\p{Lo}\\p{M}]+)*)?(:[a-z]+)?$"
-                },
-                "governor": {
-                  "type": "integer",
-                  "description": "Token Id corresponding to the governor"
-                },
-                "dependent": {
-                  "type": "integer",
-                  "description": "Token Id corresponding to the dependent"
-                },
-                "scores": {
-                  "$ref": "#/definitions/scores"
+                "arcs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "label",
+                      "governor",
+                      "dependent"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "examples": ["nsubj"]
+                      },
+                      "governor": {
+                        "type": "integer",
+                        "description": "Token Id corresponding to the governor"
+                      },
+                      "dependent": {
+                        "type": "integer",
+                        "description": "Token Id corresponding to the dependent"
+                      },
+                      "scores": {
+                        "$ref": "#/definitions/scores"
+                      }
+                    }
+                  }
                 }
               }
             }
