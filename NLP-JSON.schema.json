@@ -9,9 +9,8 @@
       "required": ["DC.conformsTo"],
       "properties": {
         "DC.conformsTo": {
-          "type": "number",
+          "type": "string",
           "description": "The NLP-JSON Schema Version",
-          "default": 0.1,
           "pattern": "^\\d+\\.\\d+(\\.\\d+)*$"
         },
         "DC.source": {
@@ -24,7 +23,6 @@
           "pattern": "^(.+)$"
         },
         "DC.created": {
-          "$id": "#/properties/DC.created",
           "type": "string",
           "description": "The parse time of the document, in ISO 8601 format",
           "examples": [
@@ -33,7 +31,6 @@
           "pattern": "^(.+)$"
         },
         "DC.date": {
-          "$id": "#/properties/DC.date",
           "type": "string",
           "description": "The time of the most recent modification to the document, in ISO 8601 format",
           "examples": [
@@ -42,7 +39,6 @@
           "pattern": "^(.+)$"
         },
         "DC.creator": {
-          "$id": "#/properties/DC.creator",
           "type": "string",
           "description": "The person at whose behest the document was parsed",
           "examples": [
@@ -51,7 +47,6 @@
           "pattern": "^(.+)$"
         },
         "DC.publisher": {
-          "$id": "#/properties/DC.publisher",
           "type": "string",
           "description": "Organization associated with this parse",
           "examples": [
@@ -60,7 +55,6 @@
           "pattern": "^(.+)$"
         },
         "DC.title": {
-          "$id": "#/properties/DC.title",
           "type": "string",
           "description": "The title of the document parsed",
           "examples": [
@@ -70,7 +64,6 @@
           "pattern": "^(.+)$"
         },
         "DC.description": {
-          "$id": "#/properties/DC.description",
           "type": "string",
           "examples": [
             "A website providing a metadata standard"
@@ -78,7 +71,6 @@
           "pattern": "^(.+)$"
         },
         "DC.identifier": {
-          "$id": "#/properties/DC.identifier",
           "type": "string",
           "description": "Complete reference to the original document that was parsed",
           "examples": [
@@ -88,7 +80,6 @@
           "pattern": "^(.+)$"
         },
         "DC.language": {
-          "$id": "#/properties/DC.language",
           "type": "string",
           "description": "ISO 639-1 or 639-2 language specification",
           "examples": [
@@ -761,37 +752,43 @@
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["arcs"],
+              "required": ["arcs", "style"],
               "properties": {
                 "style": {
                   "type": "string",
-                  "examples": ["collapsed", "universal", "enhanced"]
+                  "examples": ["collapsed", "universal", "enhanced", "enhanced++"]
                 },
                 "arcs": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": [
-                      "label",
-                      "governor",
-                      "dependent"
-                    ],
-                    "additionalProperties": false,
-                    "properties": {
-                      "label": {
-                        "type": "string",
-                        "examples": ["nsubj"]
-                      },
-                      "governor": {
-                        "type": "integer",
-                        "description": "Token Id corresponding to the governor"
-                      },
-                      "dependent": {
-                        "type": "integer",
-                        "description": "Token Id corresponding to the dependent"
-                      },
-                      "scores": {
-                        "$ref": "#/definitions/scores"
+                  "type": "object",
+                  "description": "A mapping of dependent token id to a list of governors",
+                  "additionalProperties": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "label",
+                        "governor"
+                      ],
+                      "additionalProperties": false,
+                      "properties": {
+                        "sentenceId": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string",
+                          "examples": ["nsubj"]
+                        },
+                        "governor": {
+                          "type": "integer",
+                          "description": "Token Id corresponding to the governor"
+                        },
+                        "dependent": {
+                          "type": "integer",
+                          "description": "Token Id corresponding to the dependent"
+                        },
+                        "scores": {
+                          "$ref": "#/definitions/scores"
+                        }
                       }
                     }
                   }
