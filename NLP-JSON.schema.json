@@ -273,9 +273,8 @@
     },
     "documents": {
       "$id": "#/properties/documents",
-      "type": "array",
-      "minItems": 1,
-      "items": {
+      "type": "object",
+      "additionalProperties": {
         "type": "object",
         "additionalProperties": false,
         "required": ["tokenList"],
@@ -311,8 +310,8 @@
           },
           "paragraphs": {
             "$id": "#/properties/documents/paragraphs",
-            "type": "array",
-            "items": {
+            "type": "object",
+            "additionalProperties": {
               "type": "object",
               "required": [
                 "tokens"
@@ -343,11 +342,10 @@
           },
           "sentences": {
             "$id": "#/properties/documents/sentences",
-            "type": "array",
-            "items": {
+            "type": "object",
+            "additionalProperties": {
               "type": "object",
               "required": [
-                "id",
                 "tokenFrom",
                 "tokenTo"
               ],
@@ -414,6 +412,14 @@
                 "tokens": {
                   "$ref": "#/definitions/tokenIdList"
                 },
+                "clauses": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "labels": {
                   "$ref": "#/definitions/labels"
                 },
@@ -442,11 +448,10 @@
           },
           "clauses": {
             "$id": "#/properties/documents/clauses",
-            "type": "array",
-            "items": {
+            "type": "object",
+            "additionalItems": {
               "type": "object",
               "required": [
-                "id",
                 "sentenceId",
                 "type",
                 "mainVerb",
@@ -532,15 +537,13 @@
           },
           "tokenList": {
             "$id": "#/properties/documents/tokenList",
-            "type": "array",
-            "description": "A list of tokens objects in the document",
-            "minItems": 1,
-            "items": {
+            "type": "object",
+            "description": "A mapping of tokens objects in the document",
+            "additionalProperties": {
               "$id": "#/properties/documents/tokenList/items",
               "type": "object",
               "description": "A single token",
               "required": [
-                "id",
                 "text"
               ],
               "additionalProperties": false,
