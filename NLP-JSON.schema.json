@@ -314,11 +314,16 @@
             "additionalProperties": {
               "type": "object",
               "required": [
+                "id",
                 "tokens"
               ],
               "additionalProperties": false,
               "properties": {
                 "id": {
+                  "type": "integer",
+                  "description": "Unique paragraph ID"
+                },
+                "conllId": {
                   "type": "string",
                   "description": "Unique paragraph ID"
                 },
@@ -352,6 +357,10 @@
               "additionalProperties": false,
               "properties": {
                 "id": {
+                  "type": "integer",
+                  "description": "Unique sentence ID"
+                },
+                "conllId": {
                   "type": "string",
                   "description": "Unique sentence ID"
                 },
@@ -417,7 +426,7 @@
                   "minItems": 1,
                   "uniqueItems": true,
                   "items": {
-                    "type": "string"
+                    "type": "integer"
                   }
                 },
                 "labels": {
@@ -452,6 +461,7 @@
             "additionalItems": {
               "type": "object",
               "required": [
+                "id",
                 "sentenceId",
                 "type",
                 "mainVerb",
@@ -461,10 +471,10 @@
               "additionalProperties": false,
               "properties": {
                 "id": {
-                  "type": "string"
+                  "type": "integer"
                 },
                 "sentenceId": {
-                  "type": "string",
+                  "type": "integer",
                   "description": "Reference to the containing sentence"
                 },
                 "type": {
@@ -544,6 +554,7 @@
               "type": "object",
               "description": "A single token",
               "required": [
+                "id",
                 "text"
               ],
               "additionalProperties": false,
@@ -653,10 +664,10 @@
                   ]
                 },
                 "synsets": {
-                  "$id": "#/properties/documents/tokenList/items/properties/synsets",
-                  "type": "array",
-                  "items": {
+                  "type": "object",
+                  "additionalProperties": {
                     "type": "object",
+                    "required": ["wordnetId"],
                     "additionalProperties": false,
                     "properties": {
                       "scores": {
@@ -707,6 +718,35 @@
                         }
                       },
                       "definition": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "verbFrames": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object",
+                    "required": ["classId"],
+                    "additionalProperties": true,
+                    "properties": {
+                      "classId": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "frames": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object",
+                    "required": ["name", "frameId"],
+                    "additionalProperties": true,
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "frameId": {
                         "type": "string"
                       }
                     }
@@ -775,7 +815,7 @@
                       "additionalProperties": false,
                       "properties": {
                         "sentenceId": {
-                          "type": "string"
+                          "type": "integer"
                         },
                         "label": {
                           "type": "string",
@@ -874,7 +914,7 @@
               "type": "object",
               "$id": "#/properties/documents/constituents",
               "required": [
-                "sentId",
+                "sentenceId",
                 "labeledBracketing"
               ],
               "additionalProperties": false,
@@ -882,7 +922,7 @@
                 "scores": {
                   "$ref": "#/definitions/scores"
                 },
-                "sentId": {
+                "sentenceId": {
                   "type": "integer"
                 },
                 "labeledBracketing": {
@@ -973,7 +1013,7 @@
               "additionalProperties": false,
               "properties": {
                 "id": {
-                  "type": "string"
+                  "type": "integer"
                 },
                 "tokens": {
                   "type": "array",
