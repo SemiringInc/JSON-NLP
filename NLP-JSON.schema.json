@@ -159,6 +159,22 @@
         }
       }
     },
+    "grammar": {
+      "type": "object",
+      "required": ["head", "semantic", "phrase"],
+      "additionalProperties": false,
+      "properties": {
+        "head": {
+          "type": "integer"
+        },
+        "semantic": {
+          "$ref": "#/definitions/tokenIdList"
+        },
+        "phrase": {
+          "$ref": "#/definitions/tokenIdList"
+        }
+      }
+    },
     "nodeIdList": {
       "type": "array",
       "description": "Node id lists can be empty",
@@ -389,26 +405,33 @@
                     }
                   }
                 },
+                "tense": {
+                  "type": "string",
+                  "pattern": "^(past|present|future|past-perfect|future-perfect)$"
+                },
+                "transitivity": {
+                  "type": "string",
+                  "pattern": "^(transitive|intransitive|ditransitive)$"
+                },
+                "negated": {
+                  "type": "boolean",
+                  "default": false
+                },
+                "root": {
+                  "description": "Token id corresponding to the root",
+                  "type": "integer"
+                },
                 "mainVerb": {
-                  "type": "array",
-                  "description": "Token Ids corresponding to the main verb",
-                  "items": {
-                    "type": "integer"
-                  }
+                  "$ref": "#/definitions/grammar"
                 },
                 "subject": {
-                  "type": "array",
-                  "description": "Token Ids corresponding to the subject",
-                  "items": {
-                    "type": "integer"
-                  }
+                  "$ref": "#/definitions/grammar"
                 },
                 "object": {
-                  "type": "array",
-                  "description": "Token Ids corresponding to the object",
-                  "items": {
-                    "type": "integer"
-                  }
+                  "$ref": "#/definitions/grammar"
+                },
+                "indirectObject": {
+                  "$ref": "#/definitions/grammar"
                 },
                 "tokenFrom": {
                   "type": "integer",
@@ -421,14 +444,6 @@
                 "tokens": {
                   "$ref": "#/definitions/tokenIdList"
                 },
-                "clauses": {
-                  "type": "array",
-                  "minItems": 1,
-                  "uniqueItems": true,
-                  "items": {
-                    "type": "integer"
-                  }
-                },
                 "labels": {
                   "$ref": "#/definitions/labels"
                 },
@@ -436,11 +451,16 @@
                   "type": "boolean",
                   "default": false
                 },
+                "compound": {
+                  "type": "boolean",
+                  "default": false
+                },
+                "fragment": {
+                  "type": "boolean",
+                  "default": false
+                },
                 "type": {
                   "type": "string",
-                  "examples": [
-                    "interrogative"
-                  ],
                   "pattern": "^(interrogative|alternative_question|declarative_question|direct_question|indirect_question|display_question|echo_question|embedded_question|hypophora|leading_question|declarative|rhetorical_question|tag_question|wh_question|whimperative|yes_no_question)$"
                 },
                 "embeddings": {
@@ -458,13 +478,12 @@
           "clauses": {
             "$id": "#/properties/documents/clauses",
             "type": "object",
-            "additionalItems": {
+            "additionalProperties": {
               "type": "object",
               "required": [
                 "id",
                 "sentenceId",
                 "type",
-                "mainVerb",
                 "root",
                 "tokens"
               ],
@@ -477,22 +496,20 @@
                   "type": "integer",
                   "description": "Reference to the containing sentence"
                 },
+                "parentClauseId": {
+                  "type": "integer",
+                  "description": "Reference to the containing clause"
+                },
+                "tense": {
+                  "type": "string",
+                  "pattern": "^(past|present|future|past-perfect|future-perfect)$"
+                },
                 "type": {
                   "type": "string",
-                  "examples": [
-                    "matrix",
-                    "complement",
-                    "adjunct"
-                  ],
-                  "pattern": "^(matrix|complement|adjunct|relative)$"
+                  "pattern": "^(matrix|complement|relative|adverbial|adjectival|subject)$"
                 },
                 "transitivity": {
                   "type": "string",
-                  "examples": [
-                    "transitive",
-                    "intransitive",
-                    "ditransitive"
-                  ],
                   "pattern": "^(transitive|intransitive|ditransitive)$"
                 },
                 "negated": {
@@ -500,25 +517,16 @@
                   "default": false
                 },
                 "mainVerb": {
-                  "type": "array",
-                  "description": "Token Ids corresponding to the main verb",
-                  "items": {
-                    "type": "integer"
-                  }
+                  "$ref": "#/definitions/grammar"
                 },
                 "subject": {
-                  "type": "array",
-                  "description": "Token Ids corresponding to the subject",
-                  "items": {
-                    "type": "integer"
-                  }
+                  "$ref": "#/definitions/grammar"
                 },
                 "object": {
-                  "type": "array",
-                  "description": "Token Ids corresponding to the object",
-                  "items": {
-                    "type": "integer"
-                  }
+                  "$ref": "#/definitions/grammar"
+                },
+                "indirectObject": {
+                  "$ref": "#/definitions/grammar"
                 },
                 "root": {
                   "description": "Token id corresponding to the root",
@@ -809,6 +817,7 @@
                     "items": {
                       "type": "object",
                       "required": [
+                        "sentenceId",
                         "label",
                         "governor"
                       ],
@@ -1046,6 +1055,31 @@
                 },
                 "scores": {
                   "$ref": "#/definitions/scores"
+                }
+              }
+            }
+          },
+          "relations": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "required": ["id", "predicate", "from", "to"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "predicate": {
+                  "$ref": "#/definitions/grammar"
+                },
+                "from": {
+                  "$ref": "#/definitions/grammar"
+                },
+                "to": {
+                  "$ref": "#/definitions/grammar"
+                },
+                "modality": {
+                  "$ref": "#/definitions/tokenIdList"
                 }
               }
             }
