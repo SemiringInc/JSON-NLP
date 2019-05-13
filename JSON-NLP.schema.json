@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "The NLP-JSON Schema",
+  "title": "The JSON-NLP Schema",
   "type": "object",
   "definitions": {
     "meta": {
@@ -10,7 +10,7 @@
       "properties": {
         "DC.conformsTo": {
           "type": "string",
-          "description": "The NLP-JSON Schema Version",
+          "description": "The JSON-NLP Schema Version",
           "pattern": "^\\d+\\.\\d+(\\.\\d+)*$"
         },
         "DC.source": {

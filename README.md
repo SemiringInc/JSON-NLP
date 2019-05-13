@@ -1,5 +1,8 @@
 # JSON-NLP
 
+(C) 2019 by Damir Cavar, Oren Baldinger, Joshua Herring, Anurag Kumar, Aarushi Bisht, Jagpreet Chawla
+
+
 Brought to you by the [NLP-Lab.org]!
 
 
