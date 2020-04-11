@@ -1,6 +1,6 @@
 # JSON-NLP
 
-(C) 2019 by Damir Cavar, Oren Baldinger, Joshua Herring, Anurag Kumar, Aarushi Bisht, Jagpreet Chawla
+(C) 2019-2020 by Damir Cavar, Oren Baldinger, Joshua Herring, Anurag Kumar, Aarushi Bisht, Jagpreet Chawla
 
 
 Brought to you by the [NLP-Lab.org]!
@@ -39,7 +39,7 @@ To cite this work, refer to the paper:
 
 This code, documentation, and examples are brought to you by the [NLP-Lab.org].
 
-(C) 2018-2019 The [NLP-Lab.org]
+(C) 2018-2020 The [NLP-Lab.org]
 
 
 [Damir Cavar]: http://damir.cavar.me/ "Damir Cavar"
