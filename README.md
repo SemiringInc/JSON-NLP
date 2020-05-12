@@ -25,7 +25,7 @@ Standards used:
 
 ## Copyright, License, Citing
 
-For licensing details see the LICENSE file. All NLP-Lab code is published under the Apache License Version 2.0.
+For licensing details see the LICENSE file. The JSON-NLP code and specification are published under the Apache License Version 2.0.
 
 To cite this work, refer to the paper:
 
@@ -34,7 +34,7 @@ To cite this work, refer to the paper:
 (Link to paper is coming soon)
 
 
-This code, documentation, and examples are brought to you by the [Semiring].
+This code, documentation, and examples are brought to you by the [NLP-Lab.org] and [Semiring].
 
 (C) 2018-2020 The [Semiring]
 
