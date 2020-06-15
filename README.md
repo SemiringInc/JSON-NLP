@@ -3,7 +3,7 @@
 (C) 2019-2020 by Damir Cavar, Oren Baldinger, Joshua Herring, Anurag Kumar, Aarushi Bisht, Jagpreet Chawla, [Semiring] Inc.
 
 
-## Version alpha 0.1
+## Version 0.2
 
 The JSON-NLP Schema is a standard middle-ware type for the transfer of NLP output from various NLP pipelines and chains to a uniform JSON format.
 
