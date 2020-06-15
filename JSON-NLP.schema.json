@@ -194,7 +194,7 @@
       "additionalProperties": false
     },
     "features": {
-      "description": "Linguistic features, corresponding to the ConLL format",
+      "description": "Linguistic features, corresponding to the CoNLL format",
       "type": "object",
       "patternProperties": {
         "^[A-Z0-9][A-Z0-9a-z]*(\\[[a-z0-9]+\\])?$": {
@@ -205,7 +205,7 @@
       "additionalProperties": false
     },
     "misc": {
-      "description": "Miscellaneous features, corresponding to the ConLL format",
+      "description": "Miscellaneous features, corresponding to the CoNLL format",
       "type": "object",
       "patternProperties": {
         "^[A-Z0-9][A-Z0-9a-z]*(\\[[a-z0-9]+\\])?$": {
@@ -281,7 +281,7 @@
       "additionalProperties": false,
       "properties": {
         "sentence_ids": {
-          "description": "Are sentence ids provided for each sentence",
+          "description": "Are sentence IDs provided for each sentence",
           "type": "boolean",
           "default": false
         }

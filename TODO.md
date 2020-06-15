@@ -1,4 +1,12 @@
-**schema**
+# TODO
+
+(C) 2020 by Semiring Inc., Damir Cavar
+
+Things to fix related to JSON-NLP.
+
+
+## Schema
+
 - Metadata
     - format (json)
     - contributor
@@ -9,10 +17,13 @@
 - tokens
     - all the linguistic properties
 - validator
-    
-**libraries**
+
+
+## Libraries and Pipelines
+
 - Flair
 - NLTK
 - Polyglot
 - Delph-IN
 - unit tests and examples
+
