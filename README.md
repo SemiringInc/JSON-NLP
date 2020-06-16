@@ -23,6 +23,27 @@ Standards used:
 - [Dublin Core](http://dublincore.org/)
 
 
+## Related Technologies
+
+JSON-NLP is accompanied by numerous tools and technologies. There are wrappers in Python, Java, Go, and many other languages. See for more details:
+
+- [Go JSON-NLP module](https://github.com/SemiringInc/GoJSONNLP)
+- [Python JSON-NLP module](https://pypi.org/project/pyjsonnlp/)
+- [NLP API example pipeline in Python](https://github.com/SemiringInc/NLPAPIPipelineExample)
+- [NLP example code](https://github.com/SemiringInc/NLPAPIExamples)
+- [spaCy JSON-NLP wrapper](https://pypi.org/project/spacyjsonnlp/)
+- [Flair JSON-NLP wrapper](https://pypi.org/project/flairjsonnlp/)
+- [Xrenner JSON-NLP wrapper](https://pypi.org/project/xrennerjsonnlp/)
+- [Polyglot JSON-NLP wrapper](https://pypi.org/project/polyglotjsonnlp/)
+- [NLTK JSON-NLP wrapper](https://pypi.org/project/polyglotjsonnlp/)
+- [Stanford CoreNLP JSON-NLP wrapper and Java code](https://github.com/dcavar/J-JSON-NLP)
+
+
+There is also a JSON-NLP Visualizer:
+
+- [JSON-NLP Visualizer](https://semiringinc.github.io/JSON-NLP-Viz/)
+
+
 ## Copyright, License, Citing
 
 For licensing details see the LICENSE file. The JSON-NLP code and specification are published under the Apache License Version 2.0.
